@@ -19,5 +19,4 @@ player.on('timeupdate', throttle(rememberPlaceToStartVideo, 1000));
 
 function rememberPlaceToStartVideo(event) {
   localStorage.setItem(LOCAL_STORAGE_KEY, event.seconds);
-  console.log(event.seconds);
 }
